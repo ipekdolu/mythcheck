@@ -1,0 +1,31 @@
+# Core
+python-dotenv==1.0.1
+truststore==0.10.4
+
+# Knowledge graph
+neo4j==5.28.1
+
+# Vector store
+chromadb==0.5.23
+
+# LLM
+anthropic==1.5.0
+
+# Observability
+langfuse==2.60.1
+
+# Wikipedia ingestion
+wikipedia-api==0.7.1
+
+# Schema validation
+pydantic==2.10.4
+
+# API / UI (installed now for Phase 0 env parity; not used until Phase 6)
+fastapi==0.115.6
+uvicorn==0.34.0
+streamlit==1.41.1
+
+# Utilities
+tenacity==9.0.0
+numpy==2.2.1
+requests==2.34.2

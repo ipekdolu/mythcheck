@@ -1,0 +1,513 @@
+[
+  {
+    "text": "Zeus wielded thunderbolts as his primary weapon and symbol of power.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed: Zeus wields Thunderbolt is a direct extracted graph edge.",
+    "predicted_verdict": "SUPPORTED",
+    "sub_claims": [
+      {
+        "claim_text": "Zeus wielded thunderbolts as his primary weapon and symbol of power.",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "zeus::0::cae9608a35ef",
+          "zeus::12::f3d5b07569b9"
+        ],
+        "reasoning": "Graph has a direct wields edge between the two entities."
+      }
+    ]
+  },
+  {
+    "text": "Zeus was married to Hera, though he had numerous affairs with goddesses and mortal women.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed: Zeus spouse_of Hera edge; affairs are standard, widely attested myth content.",
+    "predicted_verdict": "SUPPORTED",
+    "sub_claims": [
+      {
+        "claim_text": "Zeus was married to Hera",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "heracles::5::a21cec910222",
+          "zeus::0::cae9608a35ef",
+          "zeus::11::45d01f5bf542",
+          "zeus::12::f3d5b07569b9",
+          "zeus::20::6c63488bbbc0",
+          "zeus::7::1281256a510a",
+          "zeus::8::79e61639e07e"
+        ],
+        "reasoning": "Graph has a direct spouse_of edge between the two entities."
+      },
+      {
+        "claim_text": "Zeus had affairs with goddesses",
+        "claim_type": "descriptive",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "zeus::0::cae9608a35ef"
+        ],
+        "reasoning": "The passage directly states that \"Zeus was also infamous for his erotic escapades. These resulted in many divine and heroic offspring.\" It specifically mentions that he was married to Hera and had children with her (Ares, Eileithyia, Hebe, and Hephaestus), that his consort at Dodona was the goddess Dione by whom he fathered Aphrodite, and that his first wife was Metis by whom he had Athena. This clearly establishes that Zeus had affairs with goddesses, including Hera, Dione, and Metis."
+      },
+      {
+        "claim_text": "Zeus had affairs with mortal women",
+        "claim_type": "descriptive",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "zeus::8::79e61639e07e"
+        ],
+        "reasoning": "The retrieved passage directly confirms the claim that Zeus had affairs with mortal women. The first passage explicitly states: \"After his marriage to Hera, different authors describe Zeus's numerous affairs with various mortal women.\" It then provides multiple specific examples of these affairs, including those with Europa, Leda, Callisto, Alcmene, Danae, Aegina, Io, and Semele. The second passage also confirms this, noting that \"Zeus was also infamous for his erotic escapades.\""
+      }
+    ]
+  },
+  {
+    "text": "Zeus fathered many famous figures in Greek mythology, including Athena, Apollo, and Heracles.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed: Zeus parent_of Athena/Heracles edges present in graph.",
+    "predicted_verdict": "SUPPORTED",
+    "sub_claims": [
+      {
+        "claim_text": "Zeus fathered Athena",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "athena::0::104924a30b5e",
+          "athena::10::2d704f43a266",
+          "athena::14::a1f621ebaa7f",
+          "athena::22::8a606c567d24",
+          "athena::4::7bf13662b298",
+          "athena::6::1c5fa2e2685a",
+          "athena::8::de2a63ff3352",
+          "perseus::4::169ad967f1e7",
+          "zeus::0::cae9608a35ef",
+          "zeus::7::1281256a510a"
+        ],
+        "reasoning": "Graph has a direct parent_of edge between the two entities."
+      },
+      {
+        "claim_text": "Zeus fathered Apollo",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "athena::10::2d704f43a266",
+          "zeus::0::cae9608a35ef"
+        ],
+        "reasoning": "Graph has a direct parent_of edge between the two entities."
+      },
+      {
+        "claim_text": "Zeus fathered Heracles",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "heracles::0::21b0bc12a920",
+          "heracles::11::1f9ae83ec77c",
+          "heracles::15::95c4f5ba2d6c",
+          "heracles::5::a21cec910222",
+          "heracles::7::2bac3c990e99",
+          "zeus::0::cae9608a35ef",
+          "zeus::8::79e61639e07e"
+        ],
+        "reasoning": "Graph has a direct parent_of edge between the two entities."
+      }
+    ]
+  },
+  {
+    "text": "Odin sacrificed his eye at a well to gain knowledge and wisdom.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/odin.txt: eye hidden in the spring Mimisbrunnr, sacrificed for wisdom.",
+    "predicted_verdict": "SUPPORTED",
+    "sub_claims": [
+      {
+        "claim_text": "Odin sacrificed his eye at a well to gain knowledge and wisdom",
+        "claim_type": "descriptive",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "odin::0::6bd64520c34c"
+        ],
+        "reasoning": "The passage directly supports the claim. It explicitly states: \"Odin is often referred to as long-bearded, sometimes as an old man, and also as possessing only one eye, having sacrificed the other for wisdom.\" This confirms that Odin sacrificed his eye for wisdom. While the retrieved passages do not specify that this sacrifice occurred at a well, the core claim about sacrificing an eye to gain wisdom is explicitly confirmed."
+      }
+    ]
+  },
+  {
+    "text": "Odin has two ravens named Huginn and Muninn that fly across the world to bring him information.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed in data/raw/odin.txt and in the extracted graph (Odin ally_of Huginn/Muninn).",
+    "predicted_verdict": "UNVERIFIABLE",
+    "sub_claims": [
+      {
+        "claim_text": "Odin has two ravens named Huginn and Muninn",
+        "claim_type": "relational",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "One or both entities not found in the knowledge graph."
+      },
+      {
+        "claim_text": "Huginn and Muninn fly across the world to bring Odin information",
+        "claim_type": "relational",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "One or both entities not found in the knowledge graph."
+      }
+    ]
+  },
+  {
+    "text": "Osiris was murdered by his brother Set, who dismembered his body.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Standard, well-attested core myth; consistent with Set/Osiris rivalry edges in the graph.",
+    "predicted_verdict": "SUPPORTED",
+    "sub_claims": [
+      {
+        "claim_text": "Osiris was murdered by his brother Set",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "anubis::4::c86d8f97a214",
+          "isis::3::2a9601d6d8a2",
+          "osiris::0::094847ee071c",
+          "osiris::3::091fc0f382de",
+          "osiris::5::1ecd857061f9",
+          "osiris::8::f39bc3d5d243",
+          "set_deity::0::dfdbf52f0a1a",
+          "set_deity::6::37f9a9f8a5a1"
+        ],
+        "reasoning": "Graph has a direct defeats edge between the two entities."
+      },
+      {
+        "claim_text": "Set dismembered Osiris's body",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "anubis::4::c86d8f97a214",
+          "isis::3::2a9601d6d8a2",
+          "osiris::0::094847ee071c",
+          "osiris::3::091fc0f382de",
+          "osiris::5::1ecd857061f9",
+          "osiris::8::f39bc3d5d243",
+          "set_deity::0::dfdbf52f0a1a",
+          "set_deity::6::37f9a9f8a5a1"
+        ],
+        "reasoning": "Graph has a direct defeats edge between the two entities."
+      },
+      {
+        "claim_text": "Set is the brother of Osiris",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "osiris::0::094847ee071c",
+          "osiris::5::1ecd857061f9",
+          "set_deity::0::dfdbf52f0a1a"
+        ],
+        "reasoning": "Graph has a direct sibling_of edge between the two entities."
+      }
+    ]
+  },
+  {
+    "text": "Osiris's wife Isis collected his scattered remains and used magic to restore him.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed: Isis spouse_of Osiris edge; standard resurrection myth.",
+    "predicted_verdict": "UNVERIFIABLE",
+    "sub_claims": [
+      {
+        "claim_text": "Osiris's wife is Isis",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "anubis::2::8a7eafce57a8",
+          "anubis::3::1d9dd19f94bb",
+          "isis::0::1daf588fe7bf",
+          "isis::10::d3cf59ea6f81",
+          "isis::11::ca7f1ff7e187",
+          "isis::12::2ff5a733a5c8",
+          "isis::15::8338f1b12abc",
+          "isis::16::7b1257ec0c58",
+          "isis::1::cdcb3fd578d2",
+          "isis::21::70b4f74fd2e0",
+          "isis::24::145d5e1ce9b5",
+          "isis::2::b7084c42d6b2",
+          "isis::3::2a9601d6d8a2",
+          "isis::5::46b6222858e4",
+          "isis::7::f3a74d0d85a4",
+          "isis::9::673735a2ce57",
+          "osiris::0::094847ee071c",
+          "osiris::12::9e1dc2b642fe",
+          "osiris::3::091fc0f382de",
+          "osiris::5::1ecd857061f9",
+          "osiris::6::cbae04a5eddf",
+          "osiris::7::12fd396cb3f1",
+          "set_deity::0::dfdbf52f0a1a"
+        ],
+        "reasoning": "Graph has a direct spouse_of edge between the two entities."
+      },
+      {
+        "claim_text": "Isis collected Osiris's scattered remains",
+        "claim_type": "relational",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "No matching or contradicting edge found between these entities."
+      },
+      {
+        "claim_text": "Isis used magic to restore Osiris",
+        "claim_type": "descriptive",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "osiris::5::1ecd857061f9"
+        ],
+        "reasoning": "The passage directly states: \"In one version of the myth, Isis used a spell to briefly revive Osiris so he could impregnate her.\" This explicitly confirms that Isis used magic (a spell) to restore/revive Osiris."
+      }
+    ]
+  },
+  {
+    "text": "Loki is the father of Fenrir, the monstrous wolf.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/loki.txt (\"father of Hel, the wolf Fenrir and the world serpent Jormungandr\").",
+    "predicted_verdict": "SUPPORTED",
+    "sub_claims": [
+      {
+        "claim_text": "Loki is the father of Fenrir, the monstrous wolf.",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "loki::0::f84d86e9f8cd",
+          "loki::10::f1cd0dc1d63a",
+          "loki::11::dce95e24fe9a",
+          "loki::5::142c6db10fc2"
+        ],
+        "reasoning": "Graph has a direct parent_of edge between the two entities."
+      }
+    ]
+  },
+  {
+    "text": "Loki tricked the blind god Hodr into killing Baldr with a dart made of mistletoe.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed in data/raw/baldr.txt: Hodr kills Baldr per the Voluspa stanzas quoted there.",
+    "predicted_verdict": "UNVERIFIABLE",
+    "sub_claims": [
+      {
+        "claim_text": "Loki tricked the blind god Hodr into killing Baldr with a dart made of mistletoe.",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "baldr::2::b58afffa3cbf",
+          "baldr::3::ea01d012050a"
+        ],
+        "reasoning": "Graph has a direct rival_of edge between the two entities."
+      },
+      {
+        "claim_text": "Hodr killed Baldr with a dart made of mistletoe.",
+        "claim_type": "relational",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "No matching or contradicting edge found between these entities."
+      },
+      {
+        "claim_text": "Hodr is blind.",
+        "claim_type": "descriptive",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "\n"
+      },
+      {
+        "claim_text": "The dart was made of mistletoe.",
+        "claim_type": "descriptive",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "</antml>\n"
+      }
+    ]
+  },
+  {
+    "text": "Loki fathered Hel, Fenrir, and Jormungandr with the giantess Angrboda.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/loki.txt.",
+    "predicted_verdict": "UNVERIFIABLE",
+    "sub_claims": [
+      {
+        "claim_text": "Loki fathered Hel with Angrboda",
+        "claim_type": "relational",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "One or both entities not found in the knowledge graph."
+      },
+      {
+        "claim_text": "Loki fathered Fenrir with Angrboda",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "loki::0::f84d86e9f8cd",
+          "loki::10::f1cd0dc1d63a",
+          "loki::11::dce95e24fe9a",
+          "loki::5::142c6db10fc2"
+        ],
+        "reasoning": "Graph has a direct parent_of edge between the two entities."
+      },
+      {
+        "claim_text": "Loki fathered Jormungandr with Angrboda",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "loki::0::f84d86e9f8cd",
+          "loki::11::dce95e24fe9a"
+        ],
+        "reasoning": "Graph has a direct parent_of edge between the two entities."
+      },
+      {
+        "claim_text": "Loki and Angrboda are spouses",
+        "claim_type": "relational",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "One or both entities not found in the knowledge graph."
+      }
+    ]
+  },
+  {
+    "text": "Iolaus was Heracles's nephew and helped him defeat the Lernaean Hydra.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/heracles.txt (\"his nephew, Iolaus, had helped him burn the stumps\").",
+    "predicted_verdict": "UNVERIFIABLE",
+    "sub_claims": [
+      {
+        "claim_text": "Iolaus was Heracles's nephew",
+        "claim_type": "relational",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "One or both entities not found in the knowledge graph."
+      },
+      {
+        "claim_text": "Iolaus helped Heracles defeat the Lernaean Hydra",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "heracles::13::8a333e113b40",
+          "heracles::14::bbad7c6b2dd8",
+          "heracles::20::9316c5ab40b2",
+          "heracles::5::a21cec910222",
+          "heracles::7::2bac3c990e99"
+        ],
+        "reasoning": "Graph has a direct ally_of edge between the two entities."
+      },
+      {
+        "claim_text": "Heracles defeated the Lernaean Hydra",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "heracles::15::95c4f5ba2d6c",
+          "heracles::18::c7c2248a42ab",
+          "heracles::7::2bac3c990e99"
+        ],
+        "reasoning": "Graph has a direct defeats edge between the two entities."
+      }
+    ]
+  },
+  {
+    "text": "Anubis is typically depicted with the head of a jackal.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/anubis.txt.",
+    "predicted_verdict": "SUPPORTED",
+    "sub_claims": [
+      {
+        "claim_text": "Anubis is typically depicted with the head of a jackal.",
+        "claim_type": "descriptive",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "anubis::7::1c38d9020d7e"
+        ],
+        "reasoning": "The passage directly states that one of Anubis's most popular representations depicts him \"with the body of a man and the head of a jackal with pointed ears.\" This confirms that Anubis is typically depicted with the head of a jackal. Additional support can be found in another passage (anubis::8::37c487a53eba) which notes that \"In the Middle Kingdom, Anubis was often portrayed as a man with the head of a jackal.\""
+      }
+    ]
+  },
+  {
+    "text": "Loki's siblings are his brother Byleistr and another brother whose name is unknown.",
+    "gold_verdict": "CONTRADICTED",
+    "check_note": "FALSE as generated: data/raw/loki.txt names both brothers explicitly - \"brother of Helblindi and Byleistr\" - the second brother's name is not unknown.",
+    "predicted_verdict": "CONTRADICTED",
+    "sub_claims": [
+      {
+        "claim_text": "Loki's sibling is Byleistr",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "loki::0::f84d86e9f8cd",
+          "loki::10::f1cd0dc1d63a",
+          "loki::11::dce95e24fe9a",
+          "loki::2::fc63ec862693"
+        ],
+        "reasoning": "Graph has a direct sibling_of edge between the two entities."
+      },
+      {
+        "claim_text": "Loki has a brother whose name is unknown",
+        "claim_type": "descriptive",
+        "verdict": "CONTRADICTED",
+        "citations": [
+          "loki::0::f84d86e9f8cd"
+        ],
+        "reasoning": "The claim states that Loki has a brother whose name is unknown. However, the retrieved passage clearly identifies Loki's brothers by name: \"He is the son of Fárbauti (a jötunn) and Laufey (a goddess), and the brother of Helblindi and Býleistr.\" Both brothers' names are known (Helblindi and Býleistr), which directly contradicts the claim that one brother's name is unknown."
+      }
+    ]
+  },
+  {
+    "text": "Loki's wife Sigyn bore him two sons named Narfi and Nari.",
+    "gold_verdict": "CONTRADICTED",
+    "check_note": "FALSE as generated: data/raw/loki.txt gives 'Narfi or Nari' as name variants of ONE son, plus a second son Vali - not two separate sons named Narfi and Nari.",
+    "predicted_verdict": "CONTRADICTED",
+    "sub_claims": [
+      {
+        "claim_text": "Sigyn is the wife of Loki",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "loki::0::f84d86e9f8cd",
+          "loki::11::dce95e24fe9a",
+          "loki::17::4e75888e167d",
+          "loki::2::fc63ec862693",
+          "loki::7::5f3798f392f7"
+        ],
+        "reasoning": "Graph has a direct spouse_of edge between the two entities."
+      },
+      {
+        "claim_text": "Narfi is a son of Loki and Sigyn",
+        "claim_type": "relational",
+        "verdict": "CONTRADICTED",
+        "citations": [
+          "loki::0::f84d86e9f8cd",
+          "loki::7::5f3798f392f7"
+        ],
+        "reasoning": "Graph states the reverse parent_of relationship."
+      },
+      {
+        "claim_text": "Nari is a son of Loki and Sigyn",
+        "claim_type": "relational",
+        "verdict": "CONTRADICTED",
+        "citations": [
+          "loki::11::dce95e24fe9a",
+          "loki::7::5f3798f392f7"
+        ],
+        "reasoning": "Graph states the reverse parent_of relationship."
+      }
+    ]
+  },
+  {
+    "text": "The Greek historian Herodotus identified Anubis with the Greek god Hermes, leading to the combined deity Hermes Trismegistus.",
+    "gold_verdict": "CONTRADICTED",
+    "check_note": "FALSE as generated: 'Hermes'/'Herodotus' do not appear anywhere in data/raw/anubis.txt; Hermes Trismegistus is conventionally the Thoth-Hermes syncretism, not Anubis.",
+    "predicted_verdict": "UNVERIFIABLE",
+    "sub_claims": [
+      {
+        "claim_text": "Herodotus identified Anubis with Hermes",
+        "claim_type": "relational",
+        "verdict": "SUPPORTED",
+        "citations": [
+          "anubis::3::1d9dd19f94bb",
+          "anubis::6::dcbd5f3c9aa6",
+          "anubis::9::355b009f5f5f",
+          "isis::16::7b1257ec0c58"
+        ],
+        "reasoning": "Graph has a direct equivalent_to edge between the two entities."
+      },
+      {
+        "claim_text": "Anubis and Hermes were combined into the deity Hermes Trismegistus",
+        "claim_type": "relational",
+        "verdict": "UNVERIFIABLE",
+        "citations": [],
+        "reasoning": "No matching or contradicting edge found between these entities."
+      }
+    ]
+  }
+]

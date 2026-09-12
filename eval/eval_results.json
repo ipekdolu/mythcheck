@@ -1,0 +1,657 @@
+[
+  {
+    "text": "Zeus is the parent of Apollo.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Zeus",
+      "relation": "parent_of",
+      "b": "Apollo"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Hœnir is a deity from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Hœnir",
+      "true_tradition": "Norse",
+      "swapped_to": "Greek"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Jason is a rival of Athena.",
+    "claim_type": "relational",
+    "corruption_type": "wrong_relation_type",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Jason",
+      "relation": "ally_of",
+      "b": "Athena",
+      "swapped_to": "rival_of"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Ptah-Seker is a deity from the Egyptian tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Ptah-Seker",
+      "true_tradition": "Egyptian"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Persephone is the parent of Rhea.",
+    "claim_type": "relational",
+    "corruption_type": "inverted_relationship",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Persephone",
+      "relation": "parent_of",
+      "b": "Rhea",
+      "true_direction": "Rhea parent_of Persephone"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Polydectes rules graves.",
+    "claim_type": "relational",
+    "corruption_type": "attribution_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Polydectes",
+      "relation": "rules",
+      "b": "Seriphos",
+      "swapped_to": "graves"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Sostratus is a hero from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Sostratus",
+      "true_tradition": "Greek"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Set is an ally of Anubis.",
+    "claim_type": "relational",
+    "corruption_type": "wrong_relation_type",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Set",
+      "relation": "rival_of",
+      "b": "Anubis",
+      "swapped_to": "ally_of"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Osiris is a sibling of Set.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Osiris",
+      "relation": "sibling_of",
+      "b": "Set"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Titans is a deity from the Egyptian tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Titans",
+      "true_tradition": "Greek",
+      "swapped_to": "Egyptian"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Heracles defeats Leucaspis.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Heracles",
+      "relation": "defeats",
+      "b": "Leucaspis"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Zeus is the parent of Hadad.",
+    "claim_type": "relational",
+    "corruption_type": "attribution_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Zeus",
+      "relation": "parent_of",
+      "b": "Athena",
+      "swapped_to": "Hadad"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Set is a sibling of Mehen.",
+    "claim_type": "relational",
+    "corruption_type": "attribution_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Set",
+      "relation": "sibling_of",
+      "b": "Osiris",
+      "swapped_to": "Mehen"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Podarces is a hero from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Podarces",
+      "true_tradition": "Greek"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Muninn is a rival of Odin.",
+    "claim_type": "relational",
+    "corruption_type": "wrong_relation_type",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Muninn",
+      "relation": "ally_of",
+      "b": "Odin",
+      "swapped_to": "rival_of"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Maat is a deity from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Maat",
+      "true_tradition": "Egyptian",
+      "swapped_to": "Greek"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Ajax the Lesser is a hero from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Ajax the Lesser",
+      "true_tradition": "Greek"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Horus defeats Set.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Horus",
+      "relation": "defeats",
+      "b": "Set"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Achelous is a deity from the Egyptian tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Achelous",
+      "true_tradition": "Greek",
+      "swapped_to": "Egyptian"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Rindr is a deity from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Rindr",
+      "true_tradition": "Norse",
+      "swapped_to": "Greek"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Odin created Ask.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Odin",
+      "relation": "created",
+      "b": "Ask"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Megara is a hero from the Egyptian tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Megara",
+      "true_tradition": "Greek",
+      "swapped_to": "Egyptian"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Perseus is a rival of Athena.",
+    "claim_type": "relational",
+    "corruption_type": "wrong_relation_type",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Perseus",
+      "relation": "ally_of",
+      "b": "Athena",
+      "swapped_to": "rival_of"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Anubis is a deity from the Egyptian tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Anubis",
+      "true_tradition": "Egyptian"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Heracles is the parent of Alcmene.",
+    "claim_type": "relational",
+    "corruption_type": "inverted_relationship",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Heracles",
+      "relation": "parent_of",
+      "b": "Alcmene",
+      "true_direction": "Alcmene parent_of Heracles"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Sthenelus is the parent of Perseus.",
+    "claim_type": "relational",
+    "corruption_type": "inverted_relationship",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Sthenelus",
+      "relation": "parent_of",
+      "b": "Perseus",
+      "true_direction": "Perseus parent_of Sthenelus"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Ra is a rival of Mehen.",
+    "claim_type": "relational",
+    "corruption_type": "wrong_relation_type",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Ra",
+      "relation": "ally_of",
+      "b": "Mehen",
+      "swapped_to": "rival_of"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Philoctetes wields bow and arrows.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Philoctetes",
+      "relation": "wields",
+      "b": "bow and arrows"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Sekhmet is a deity from the Egyptian tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Sekhmet",
+      "true_tradition": "Egyptian"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Tyche is a deity from the Norse tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Tyche",
+      "true_tradition": "Egyptian",
+      "swapped_to": "Norse"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Melqart is a deity from the Egyptian tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Melqart",
+      "true_tradition": "Greek",
+      "swapped_to": "Egyptian"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Sibyl is a deity from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Sibyl",
+      "true_tradition": "Norse",
+      "swapped_to": "Greek"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Loptr is a deity from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "tradition_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "entity": "Loptr",
+      "true_tradition": "Norse",
+      "swapped_to": "Greek"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Thor rules Sky.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Thor",
+      "relation": "rules",
+      "b": "Sky"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Danaë is a hero from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Danaë",
+      "true_tradition": "Greek"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Hermes Trismegistus is a deity from the Egyptian tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Hermes Trismegistus",
+      "true_tradition": "Egyptian"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Erebus is a deity from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Erebus",
+      "true_tradition": "Greek"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Njörðr is the parent of Freyja.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Njörðr",
+      "relation": "parent_of",
+      "b": "Freyja"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Osiris is married to Sigyn.",
+    "claim_type": "relational",
+    "corruption_type": "attribution_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Osiris",
+      "relation": "spouse_of",
+      "b": "Isis",
+      "swapped_to": "Sigyn"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Njörðr is the parent of Freyr.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Njörðr",
+      "relation": "parent_of",
+      "b": "Freyr"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Hades wields Key of Hades.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Hades",
+      "relation": "wields",
+      "b": "Key of Hades"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Svaðilfari is the parent of Sleipnir.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Svaðilfari",
+      "relation": "parent_of",
+      "b": "Sleipnir"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Isis wields sistrum.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Isis",
+      "relation": "wields",
+      "b": "sistrum"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Zeus resides in Olympus.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Zeus",
+      "relation": "resides_in",
+      "b": "Olympus"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Sthenelus is a hero from the Greek tradition.",
+    "claim_type": "descriptive",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "entity": "Sthenelus",
+      "true_tradition": "Greek"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Bergion is the parent of Poseidon.",
+    "claim_type": "relational",
+    "corruption_type": "inverted_relationship",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Bergion",
+      "relation": "parent_of",
+      "b": "Poseidon",
+      "true_direction": "Poseidon parent_of Bergion"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Zeus is the parent of Heracles.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Zeus",
+      "relation": "parent_of",
+      "b": "Heracles"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Isis is married to Osiris.",
+    "claim_type": "relational",
+    "corruption_type": "none",
+    "gold_verdict": "SUPPORTED",
+    "source_edge": {
+      "a": "Isis",
+      "relation": "spouse_of",
+      "b": "Osiris"
+    },
+    "predicted_verdict": "SUPPORTED",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Odin is a sibling of Hathor.",
+    "claim_type": "relational",
+    "corruption_type": "attribution_swap",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Odin",
+      "relation": "sibling_of",
+      "b": "Vé",
+      "swapped_to": "Hathor"
+    },
+    "predicted_verdict": "UNVERIFIABLE",
+    "n_extracted_claims": 1
+  },
+  {
+    "text": "Forseti is the parent of Nanna.",
+    "claim_type": "relational",
+    "corruption_type": "inverted_relationship",
+    "gold_verdict": "CONTRADICTED",
+    "source_edge": {
+      "a": "Forseti",
+      "relation": "parent_of",
+      "b": "Nanna",
+      "true_direction": "Nanna parent_of Forseti"
+    },
+    "predicted_verdict": "CONTRADICTED",
+    "n_extracted_claims": 1
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "text": "Zeus wielded thunderbolts as his primary weapon and symbol of power.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed: Zeus wields Thunderbolt is a direct extracted graph edge."
+  },
+  {
+    "text": "Zeus was married to Hera, though he had numerous affairs with goddesses and mortal women.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed: Zeus spouse_of Hera edge; affairs are standard, widely attested myth content."
+  },
+  {
+    "text": "Zeus fathered many famous figures in Greek mythology, including Athena, Apollo, and Heracles.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed: Zeus parent_of Athena/Heracles edges present in graph."
+  },
+  {
+    "text": "Odin sacrificed his eye at a well to gain knowledge and wisdom.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/odin.txt: eye hidden in the spring Mimisbrunnr, sacrificed for wisdom."
+  },
+  {
+    "text": "Odin has two ravens named Huginn and Muninn that fly across the world to bring him information.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed in data/raw/odin.txt and in the extracted graph (Odin ally_of Huginn/Muninn)."
+  },
+  {
+    "text": "Osiris was murdered by his brother Set, who dismembered his body.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Standard, well-attested core myth; consistent with Set/Osiris rivalry edges in the graph."
+  },
+  {
+    "text": "Osiris's wife Isis collected his scattered remains and used magic to restore him.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed: Isis spouse_of Osiris edge; standard resurrection myth."
+  },
+  {
+    "text": "Loki is the father of Fenrir, the monstrous wolf.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/loki.txt (\"father of Hel, the wolf Fenrir and the world serpent Jormungandr\")."
+  },
+  {
+    "text": "Loki tricked the blind god Hodr into killing Baldr with a dart made of mistletoe.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed in data/raw/baldr.txt: Hodr kills Baldr per the Voluspa stanzas quoted there."
+  },
+  {
+    "text": "Loki fathered Hel, Fenrir, and Jormungandr with the giantess Angrboda.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/loki.txt."
+  },
+  {
+    "text": "Iolaus was Heracles's nephew and helped him defeat the Lernaean Hydra.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/heracles.txt (\"his nephew, Iolaus, had helped him burn the stumps\")."
+  },
+  {
+    "text": "Anubis is typically depicted with the head of a jackal.",
+    "gold_verdict": "SUPPORTED",
+    "check_note": "Confirmed verbatim in data/raw/anubis.txt."
+  },
+  {
+    "text": "Loki's siblings are his brother Byleistr and another brother whose name is unknown.",
+    "gold_verdict": "CONTRADICTED",
+    "check_note": "FALSE as generated: data/raw/loki.txt names both brothers explicitly - \"brother of Helblindi and Byleistr\" - the second brother's name is not unknown."
+  },
+  {
+    "text": "Loki's wife Sigyn bore him two sons named Narfi and Nari.",
+    "gold_verdict": "CONTRADICTED",
+    "check_note": "FALSE as generated: data/raw/loki.txt gives 'Narfi or Nari' as name variants of ONE son, plus a second son Vali - not two separate sons named Narfi and Nari."
+  },
+  {
+    "text": "The Greek historian Herodotus identified Anubis with the Greek god Hermes, leading to the combined deity Hermes Trismegistus.",
+    "gold_verdict": "CONTRADICTED",
+    "check_note": "Mixed claim, corrected after an initial grep-tooling mistake on my part missed the real match: data/raw/anubis.txt DOES confirm Anubis was identified with Hermes (true) - but the resulting combined deity is named 'Hermanubis' in the source, not 'Hermes Trismegistus' (that name belongs to the separate Thoth-Hermes syncretism). The fabricated detail is the deity's name, not the underlying identification."
+  }
+]
