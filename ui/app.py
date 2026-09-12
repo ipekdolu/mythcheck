@@ -48,8 +48,9 @@ def annotate_text(text: str, verdicts: list[dict]) -> str:
             bg = VERDICT_BG[verdict]
             tooltip = html.escape(f"{verdict}: {best_verdict['reasoning']}")
             rendered.append(
-                f'<span title="{tooltip}" style="background-color:{bg};border-bottom:2px solid {color};'
-                f'padding:1px 2px;border-radius:2px;">{html.escape(sentence)}</span>'
+                f'<span title="{tooltip}" style="background-color:{bg};color:#111111;'
+                f'border-bottom:2px solid {color};padding:1px 2px;border-radius:2px;">'
+                f'{html.escape(sentence)}</span>'
             )
         else:
             rendered.append(html.escape(sentence))
